@@ -1,0 +1,81 @@
+/* Custom Styles for Dr. Konika Agarwal's Website */
+
+/* --- 3D Flip Card Styles --- */
+.flip-card {
+    perspective: 1000px;
+    /* Essential for 3D effect */
+}
+
+.flip-card-inner {
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Chrome/Safari fix for backface visibility flicker */
+.backface-hidden {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}
+
+
+/* --- Glassmorphism Utils --- */
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* --- Hero Parallax Fixes --- */
+.hero-content {
+    perspective: 1000px;
+}
+
+/* --- Scoped Animation Classes (used by GSAP) --- */
+.gs_reveal {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
+}
+
+/* --- Smooth Scrolling for Anchor Links --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #008080;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #006666;
+}

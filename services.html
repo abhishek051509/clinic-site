@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Dr. Konika Agarwal</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-teal': '#008080',
+                        'medical-light': '#e0f2f1',
+                        'holistic-gold': '#d4af37',
+                        'holistic-warm': '#fff3e0',
+                        'text-dark': '#333333',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans text-text-dark bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-heading font-bold text-medical-teal flex items-center">
+                <span class="text-holistic-gold mr-2 text-3xl"><i class="fas fa-leaf"></i></span>
+                Dr. Konika Agarwal
+            </a>
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+                <a href="index.html#home" class="hover:text-medical-teal transition-colors">Home</a>
+                <a href="index.html#about" class="hover:text-medical-teal transition-colors">About</a>
+                <a href="index.html#services" class="text-medical-teal transition-colors">Our Services</a>
+                <a href="index.html#contact" class="hover:text-medical-teal transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-medical-teal py-16 text-center text-white">
+        <h1 class="text-4xl font-heading font-bold">Our Detailed Services</h1>
+        <p class="mt-4 text-lg opacity-90">Holistic care for every stage of a woman's life</p>
+    </div>
+
+    <div class="container mx-auto px-4 py-16 space-y-20">
+        <!-- Gynecology Section -->
+        <div>
+            <h2
+                class="text-3xl font-heading font-bold text-medical-teal mb-8 border-b-2 border-holistic-gold inline-block pb-2">
+                Gynecology Services</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-medical-teal">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800"><i
+                            class="fas fa-baby-carriage text-medical-teal mr-3"></i>Pregnancy Care</h3>
+                    <p class="text-gray-600 mb-4">We provide comprehensive antenatal and postnatal care to ensure a safe
+                        and healthy journey for both mother and baby.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Regular checkups & monitoring</li>
+                        <li>High-risk pregnancy management</li>
+                        <li>Nutritional counseling</li>
+                        <li>Post-delivery recovery support</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-medical-teal">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800"><i
+                            class="fas fa-venus text-medical-teal mr-3"></i>PCOD / PCOS Management</h3>
+                    <p class="text-gray-600 mb-4">A holistic approach to managing hormonal imbalances through lifestyle
+                        changes, medication, and diet.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Hormonal evaluation</li>
+                        <li>Menstrual cycle regulation</li>
+                        <li>Weight management guidance</li>
+                        <li>Fertility support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Homeopathy Section -->
+        <div>
+            <h2
+                class="text-3xl font-heading font-bold text-holistic-gold mb-8 border-b-2 border-medical-teal inline-block pb-2">
+                Homeopathy Services</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-holistic-gold">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800"><i
+                            class="fas fa-leaf text-holistic-gold mr-3"></i>Chronic Ailments</h3>
+                    <p class="text-gray-600 mb-4">Effective, natural treatment for long-standing health issues without
+                        harsh side effects.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Migraines & Headaches</li>
+                        <li>Arthritis & Joint Pain</li>
+                        <li>Digestive Disorders</li>
+                        <li>Allergies & Asthma</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-holistic-gold">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800"><i
+                            class="fas fa-spa text-holistic-gold mr-3"></i>Skin & Hair Care</h3>
+                    <p class="text-gray-600 mb-4">Treating the root cause of skin and hair problems for lasting
+                        radiance.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Acne & Pigmentation</li>
+                        <li>Eczema & Psoriasis</li>
+                        <li>Hair Fall & Dandruff</li>
+                        <li>Anti-aging solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-gray-100 py-16 text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Ready to prioritize your health?</h2>
+        <a href="index.html#contact"
+            class="bg-medical-teal text-white px-8 py-3 rounded-full font-medium hover:bg-teal-700 transition-colors shadow-lg">Book
+            an Appointment Now</a>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <p>&copy; 2026 Dr. Konika Agarwal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
